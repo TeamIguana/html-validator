@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    html-validator (0.0.1)
+    html-validator (0.0.2)
       nokogiri
       rake
       test-unit

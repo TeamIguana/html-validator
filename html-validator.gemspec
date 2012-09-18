@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = "html-validator"
-  s.version     = '0.0.1'
+  s.version     = '0.0.2'
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["TeamIguana"]
   s.summary     = 'Assertions to validate an html document'
@@ -11,6 +11,6 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency('nokogiri')
 
 
-  s.files        = Dir.glob("{lib}/**/*.rb")
+  s.files        = Dir.glob("{lib}/**/*.rb") + Dir.glob("{schemas}/*.*")
   s.require_paths = ['lib']
 end
