@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = "html-validator"
-  s.version     = '0.0.2'
+  s.version     = '0.1.0'
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["TeamIguana"]
   s.summary     = 'Assertions to validate an html document'
