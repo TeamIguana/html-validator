@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" xmlns="http://relaxng.org/ns/structure/1.0">
+  <!-- ##################################################################### -->
+  <include href="common.rng">
+    <a:documentation> RELAX NG Schema for XHTML 5                                       #</a:documentation>
+    <!-- ##################################################################### -->
+    <!--
+      To validate an XHTML 5 document, you must first validate against #
+      this schema and then ALSO validate against assertions.sch        #
+    -->
+    <!-- ##################################################################### -->
+    <a:documentation>Schema Framework &amp; Parameters</a:documentation>
+    <!-- XHTML flavor # -->
+    <define name="XMLonly">
+      <empty/>
+    </define>
+    <define name="HTMLonly">
+      <notAllowed/>
+    </define>
+    <!-- HTML 4 compat # -->
+    <define name="v5only">
+      <empty/>
+    </define>
+  </include>
+  <!-- ##################################################################### -->
+  <start>
+    <a:documentation>Language Definitions</a:documentation>
+    <ref name="html.elem"/>
+  </start>
+  <include href="meta.rng"/>
+  <include href="phrase.rng"/>
+  <include href="block.rng"/>
+  <include href="sectional.rng"/>
+  <include href="structural.rng"/>
+  <include href="revision.rng"/>
+  <include href="embed.rng"/>
+  <include href="ruby.rng"/>
+  <include href="media.rng"/>
+  <include href="core-scripting.rng"/>
+  <include href="tables.rng"/>
+  <include href="form-datatypes.rng"/>
+  <include href="web-forms.rng"/>
+  <include href="web-forms2.rng"/>
+  <include href="applications.rng"/>
+  <include href="data.rng"/>
+</grammar>

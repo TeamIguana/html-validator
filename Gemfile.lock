@@ -9,9 +9,9 @@ PATH
 GEM
   remote: http://rubygems.org/
   specs:
-    nokogiri (1.5.5)
-    rake (0.9.2.2)
-    test-unit (2.5.1)
+    nokogiri (1.5.6)
+    rake (10.0.3)
+    test-unit (2.5.4)
 
 PLATFORMS
   ruby
