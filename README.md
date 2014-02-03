@@ -1,6 +1,6 @@
 Assertions to validate a local html document without using external services like http://validator.w3.org/
 
-It currently validate HTML 5, and XHTML 1.0 transitional.
+It currently validates HTML 5 and XHTML 1.0 transitional.
 
 Example:
 
